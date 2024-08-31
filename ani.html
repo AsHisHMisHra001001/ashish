@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head><title> Ani </title>
+</head>
+<style>
+@keyframes ani3
+{
+10%{background:green;margin-left:800px;margin-top:0px;}
+20%{background:red;margin-left:800px;margin-top:0px;}
+30%{background:blue;margin-top:400px;}
+40%{background:yellow;margin-left:500px;margin-top:800px;}
+50%{background:grey;margin-left:400px;margin-top:800px;}
+
+60%{background:purple;margin-left:0px;margin-top:400px;}
+70%{background:white;margin-left:0px;margin-top:400px;}
+80%{background:orange;margin-left:0px;margin-top:0px;}
+90%{background:pink;margin-left:0px;margin-top:0px;}
+100%{background:teal;}
+}
+@keyframes ani4
+{
+from{transform:rotate(0deg)}
+to{tranform:rotate(360)}
+}
+
+
+#box{
+width:200px;
+height:200px;
+background:red;
+box-shadow:10px 10px 10px grey;
+animation:ani3 5s linear infinite,ani4 linear 1.50s infinite alternate;
+
+}
+
+</style>
+<body>
+<div id="box">
+</div>
+
+
+</body>
