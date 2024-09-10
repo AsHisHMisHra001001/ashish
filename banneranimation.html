@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>Slidershow</title>
+</head>
+
+<style>
+  
+
+    @keyframes slide
+    {
+        10%{left:0%;}
+        20%{left:-20%;}
+        30%{left:-20%;}
+        40%{left:-40%;}
+        50%{left:-40%;}
+        60%{left:-60%;}
+        70%{left:-60%;}
+        80%{left:-80%;}
+        90%{left:-80%;}
+    }
+     #main
+{
+width:650%;
+height:500px;
+box-shadow:10px 10px 10px gray;
+top:0px;
+}
+
+
+.pic
+width:19.99%;
+height:100%;
+position:relative;
+transition:2s;
+margin-left-2px;
+animation:slide 1s linear infinite alternate;
+}
+
+
+
+   </style>
+
+<body>
+    <div id="main">
+        <img  class="pics" src="images/p4.jpg">
+        <img class="pics" src="images/p5.jpg">
+        <img  class="pics" src="images/p6.jpg">
+        <img class="pics"  src="images/p8.jpg">
+
+
+
+    </div>
+
+</body>
+
+</html>
