@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<title>Iframe</title>
+</head>
+<style>
+
+#menu
+{
+float:left;
+display:none;
+}
+
+#main
+{
+dispaly:block;
+margin:auto;
+}
+
+#menu li 
+{
+list-style:none;
+background:teal;
+width:56%;
+text-align:center;
+padding:30px;
+box-shadow:10px 10px 10px gray;
+border-bottom:1px white solid;
+transition:0.50s;
+}
+
+#menu li :hover
+{
+cursor:pointer;
+background:#3e7f7b;
+}
+
+#menu li a:link
+{
+color:white;
+text-decoration:none;
+font-size:30px;
+text-transform:uppercase;
+}
+
+#menu li a:visited
+{
+color:white;
+}
+#menu li a:hover
+{
+text-decoration:undeline;
+}
+
+#container:hover #menu
+{
+cursor:pointer;
+display:block;
+}
+
+#container:hover #icon
+{
+display:none;
+}
+</style>
+<body>
+
+<div id="container">
+<span id="icon" style="font-size:40px">&#9776;</span>
+<div id="menu">
+<ol>
+<li><a href="index.html" target="main"> Home</a></li>
+<li><a href="practice page.html" target="main"> Practice page</a></li>
+<li><a href="div.html" target="main"> News</a></li>
+<li><a href="table23.html" target="main"> Table</a></li>
+<li><a href="photo gallery.html" target="main"> Photo Gallery</a></li>
+<li><a href="left slider.html" target="main"> Banner</a></li>
+
+</ol>
+</div>
+</div>
+<iframe id="main" name="main" src"banner slider.html" width="75%;" height="650px;" frameborder="yes">
+Your browser does not support iframe or update your browser
+</iframe>
+
+
+
+
+</body>
+</html>
