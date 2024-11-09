@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #FFFAF0;
+}
+
+header {
+  text-align: center;
+  background-color: #2E8B57;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-title {
+  font-size: 3rem;
+  color: #FFFAF0;
+  animation: fadeIn 1.5s ease;
+}
+
+.navbar a {
+  color: #FFFAF0;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home {
+  background: url('image/mainpage.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFAF0;
+}
+
+.overlay {
+  background-color: rgba(46, 139, 87, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.about {
+  background-color: #FFFAF0;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Famous Gardens Section */
+.famous-gardens .slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.garden {
+  width: 45%;
+}
+
+.garden img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.garden p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Plant Care Section */
+.plant-care {
+  text-align: center;
+}
+
+.plant-care h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.accordion-item {
+  background-color: #8B4513;
+  color: #FFFAF0;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  border: 1px solid #8B4513;
+  border-radius: 5px;
+}
+
+.contact form button {
+  padding: 10px;
+  background-color: #2E8B57;
+  color: #FFFAF0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #8B4513;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
