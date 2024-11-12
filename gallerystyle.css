@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2E8B57;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-title {
+    color: #FFFAF0;
+    font-size: 2.5rem;
+}
+
+.navbar a {
+    color: #FFFAF0;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+/* Gallery Section */
+.photo-gallery {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.photo-gallery h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photo-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFFAF0;
+    background-color: rgba(46, 139, 87, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.photo-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo-item:hover img {
+    transform: scale(1.1);
+}
+
+.photo-item:hover p {
+    opacity: 1;
+}

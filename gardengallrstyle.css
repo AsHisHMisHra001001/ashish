@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#plants">Plants</a>
+  <a href="#famous-gardens">Famous Gardens</a>
+  <a href="#plant-care">Plant Care</a>
+  <a href="photo-gallery.html">Photo Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+plants {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif; /* Add a stylish font family */
+}

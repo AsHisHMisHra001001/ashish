@@ -1,0 +1,143 @@
+/* General styles for Plant Care Page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F0F8FF;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #2E8B57;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #FFFAF0;
+}
+
+.navbar {
+    margin-top: 15px;
+}
+
+.navbar a {
+    color: #FFFAF0;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Plant Care Section */
+#care-tips {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#care-tips h2 {
+    font-size: 2.5rem;
+    color: #2E8B57;
+    margin-bottom: 40px;
+}
+
+.care-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.care-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.care-item:hover {
+    transform: scale(1.05);
+}
+
+.care-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.care-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.care-info h3 {
+    font-size: 1.5rem;
+    color: #2E8B57;
+    margin-bottom: 10px;
+}
+
+.care-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    background-color: #F0F8FF;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #2E8B57;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 12px 25px;
+    background-color: #2E8B57;
+    color: #FFFAF0;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #8B4513;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .care-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}

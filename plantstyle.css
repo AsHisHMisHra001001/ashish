@@ -1,0 +1,112 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFAF0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #2E8B57;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 2.5rem;
+    color: #FFFAF0;
+  }
+  
+  .navbar a {
+    color: #FFFAF0;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    color: #8B4513;
+    transition: color 0.3s ease;
+  }
+  
+  /* Plant Info Section */
+  .plant-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .plant-image {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  .plant-details h2 {
+    color: #2E8B57;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .plant-details p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* Care Tips Section */
+  .care-tips {
+    background-color: #F0F8FF;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .care-tips h3 {
+    font-size: 2rem;
+    color: #2E8B57;
+    margin-bottom: 30px;
+  }
+  
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .tip {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .tip h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .tip p {
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  .tip:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #2E8B57;
+    color: #FFFAF0;
+    padding: 15px;
+  }
+  
