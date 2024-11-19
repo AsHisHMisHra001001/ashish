@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <script>
+        window.document.bgColor="yellow"
+        window.document.title="welcome"
+
+        //dilog box
+        var uname="Ashish Mishra.."
+        alert("welcome to Javascript")
+        alert(uname)
+        alert("Hello..."+uname)
+
+        var ans= prompt("want to Change color..."," cyan")
+        document.bgColor= ans
+
+        var tcolor= prompt("Enter Text color...","black")
+        document.fgColor = tcolor
+
+        var username = prompt("what is your name...","undefined")
+        alert("Hello..."+username)
+
+        var unas = confirm("want to close window...")
+        alert(unas)
+
+        if(unas==true)
+            {
+                alert("window will be closed....")
+                close()
+            }
+            else
+            {
+                alert("window will not closed")
+            }
+
+    </script>
+    
+</body>
+</html>
