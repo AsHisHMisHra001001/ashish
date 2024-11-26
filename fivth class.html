@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        transition: 1.50s;
+        cursor: pointer;
+    }
+
+
+           #mtoolbar{
+            background: gray;
+            padding: 10px;
+            position: fixed;
+            top: 10px;
+            margin: 40px;
+            width: 50%;
+           }
+             
+             p{
+                margin-top: 130px;
+
+             }
+</style>
+
+<body>
+
+    <div id="mtoolbar">
+        <input type="color" id="mycolor">
+        <input id="myslider" type="range" max="30" min="20" value="10">
+
+    </div>
+    
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facere provident labore fuga natus repellendus esse, tenetur consequatur.
+             Nostrum corporis doloremque odio eius blanditiis est cum, ut officiis dolore expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ut sit sed,
+              distinctio nostrum eligendi maiores ipsam eum totam dolores numquam, nesciunt aliquid earum incidunt quidem. Provident a quisquam cum?
+           </p>
+
+                   <script>
+                    var c = document.getElementById("mycolor")
+                    var slider = document.getElementById("myslider")
+                
+
+                    c.onchange = function()
+
+                    {
+                        document.body.style.background=this.ariaValue
+
+                    }
+
+                    slider.onchange = function()
+                     {
+                        document.title = this.value 
+                        document.body.style.fontSize=this.value+"px"
+                     }
+
+                       var pic = document.createElement("img")
+                       var s = document.createElement("input")
+                       s.type="range"
+                       s.max="500"
+                       s.min="100"
+
+                         pic.style="margin:40px; width:200px;height:200px;box-shadow:10px 10px 10px greay"
+                         document.body.appendChild(pic)
+                         document.body.appendChild(s)
+
+                         s.style="margin-top:100px;margin-left:-216px;"
+                         pic.src="images/p1.jpg"
+                         s.onchange = function()
+                         {
+                            pic.style.width = s.value+"px"
+                            pic.style.height = s.value+"px"
+                              
+
+                            document.title = s.value
+
+                         }
+
+
+
+
+
+                               
+                   </script>
+
+
+
+
+</body>
+</html>
