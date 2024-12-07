@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.pic{
+    width: 50%;
+    height: 500px;
+    margin:auto;
+    display: block;
+    box-shadow: 10px 10px 10px gray;
+}
+
+</style>
+<body>
+    <img src="img/d2.jpg" class="pic" id="mypic">
+    
+    <script>
+        var d = new Date()
+        var today = d.getDay()
+
+        var p = document.getElementById("mypic")
+
+        switch(today)
+        {
+            case 0:
+                document.write("Image of Sunday")
+                p.src="img/d1.jpg"
+
+            break;
+
+            case 1:
+            document.write("Image of Monday")
+            p.src="img/d1.jpg"
+            break;
+
+            case 2:
+            document.write("Image of Tuesday")
+            p.src="img/d2.jpg"
+            break;
+
+            case 3:
+            document.write("Image of Wednesday")
+            p.src="img/d3.jpg"
+            break;
+
+            case 4:
+            document.write("Image of Thursday")
+            p.src="img/d4.jpg"
+            break;
+
+            case 5:
+            document.write("Image of Friday")
+            p.src="img/d5.jpg"
+            break;
+
+            case 6:
+            document.write("Image of Saturday")
+            p.src="img/d6.jpg"
+            break;
+        }
+
+
+    </script>
+    
+</body>
+</html>
