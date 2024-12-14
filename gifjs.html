@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pic{
+        width: 10%;
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+</style>
+<body>
+    <img class="pic" src="images/motor.gif" id="pic">
+    <h1>Using keyboard by Js</h1>
+    <script>
+        var motor = document.getElementById("pic")
+
+        var k,L,t,s;
+        L= 0
+        t= 0
+        s = 10
+        function f1(e)
+        {
+            k = e.keyCode
+
+                switch(k)
+                 {
+                    case 39:
+                        motor.style.transform="scaleX(1)"
+                        if(L<window.innerWidth-100)
+                        L=L+s
+                
+                        motor.style.left = L+"px"
+                document.title= L
+            break;
+
+            case 37:
+                motor.style.transform="scaleX(-1)"
+                if(L>=0)
+                    {
+                        L=L-s
+                    }
+                motor.style.left = L+"px"
+                document.title= L
+            break;
+            case 38:
+                if(t>0)
+                    {
+                        t=t-s
+                    }
+                    motor.style.top = t+"px"
+            break;
+
+            case 40:
+                 if(t<window.innerHeight-200)
+                 {
+                    t=t+s
+                 }
+                 motor.style.top = t+"px"
+            break;
+
+            case 32:
+                if(s<=20)
+                {
+                    s=s+1
+                }
+                else
+                {
+                    s = 0
+                }
+
+                break;
+             }
+        }
+        document.addEventListener("keydown",f1)
+    </script>
+</body>
+</html>
