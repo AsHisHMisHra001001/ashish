@@ -1,83 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-*{
+/* Global styles */
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-    color: white;
-    padding: 50px;
-    text-align: right;
-    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-.nav-container{
-    font-family: "poppins";
-
-    position: relative;
+header {
     display: flex;
     justify-content: space-between;
-    
-}
-nav{
-    position: relative;
-    right: 15px;
-    display: flex;
-    gap: 20px;
-    justify-content: right;
-}
-
-nav a{
-    text-decoration: none;
+    align-items: center;
+    padding: 1rem;
+    background-color: #F7931E;
     color: white;
 }
-nav a:hover{
-    cursor: pointer;
-    color: brown;
-    font-weight: 600;
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.name{
-    margin-left: 60px;
-    font-weight: 600;
-    font-size: 70px;
-}
-
-.first-letter{
-    color:crimson;
-}
-
-.main{
-    height: 100%;
-    width: 100%;
-    text-align: left;
-    padding: 50px;
-    font-family: "ubuntu";
-    font-size: 100px;
-    font-weight: 700;
+header nav ul {
+    list-style: none;
     display: flex;
-    position: relative;
-    
+    gap: 1rem;
 }
 
-.one{
-    color: brown;
-    margin-top: 50px;
-    margin-left: 50px;
-
-}
-.two{
-    margin-left: 10px;
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-.main img{
-    font-size: 12px;
-    font-family: sans-serif;
-     width: auto;
-     height: 400px;
-     position: absolute;
-     right: 9px;
+header nav ul li a:hover {
+    color: #333;
+}
+
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom right, #F7931E, #FFA500);
+    color: white;
+}
+
+#about, #projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 }
